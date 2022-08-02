@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import CartWidget from './CartWidget'
 
 const NavBar = () => {
   return (
@@ -15,6 +16,7 @@ const NavBar = () => {
             <Nav.Link href="#Artistas">Artistas</Nav.Link>
           </Nav>
         </Container>
+        <CartWidget numOfItems={4} />
       </Navbar>
     </>
   )
