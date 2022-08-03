@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import CartWidget from './CartWidget'
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
   return (
@@ -14,9 +14,9 @@ const NavBar = () => {
             <Nav.Link href="#Albumes">Albumes</Nav.Link>
             <Nav.Link href="#Singles">Singles</Nav.Link>
             <Nav.Link href="#Artistas">Artistas</Nav.Link>
+            <Nav.Link href="#Carrito"><CartWidget numero={4}/></Nav.Link>
           </Nav>
         </Container>
-        <CartWidget numOfItems={4} />
       </Navbar>
     </>
   )
