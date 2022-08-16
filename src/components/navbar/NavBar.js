@@ -3,18 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#Albumes">Música</Navbar.Brand>
+          <NavLink to="/">Música</NavLink>
           <Nav className="me-auto">
-            <Nav.Link href="#Albumes">Albumes</Nav.Link>
-            <Nav.Link href="#Singles">Singles</Nav.Link>
-            <Nav.Link href="#Artistas">Artistas</Nav.Link>
-            <Nav.Link href="#Carrito"><CartWidget numero={4}/></Nav.Link>
+          <NavLink to="/categoria">Albumes</NavLink>
+          <NavLink to="/categoria">Singles</NavLink>
+          <NavLink to="/cart"><CartWidget numero={4}/></NavLink>
           </Nav>
         </Container>
       </Navbar>
