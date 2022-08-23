@@ -12,8 +12,8 @@ const NavBar = () => {
         <Container>
           <NavLink to="/">Música</NavLink>
           <Nav className="me-auto">
-          <NavLink to="/categoria">Albumes</NavLink>
-          <NavLink to="/categoria">Singles</NavLink>
+          <NavLink to="/categoria/album">Albumes</NavLink>
+          <NavLink to="/categoria/sencillo">Singles</NavLink>
           <NavLink to="/cart"><CartWidget numero={4}/></NavLink>
           </Nav>
         </Container>
