@@ -12,9 +12,9 @@ const NavBar = () => {
         <Container>
           <NavLink to="/">Música</NavLink>
           <Nav className="me-auto">
-          <NavLink to="/categoria/album">Albumes</NavLink>
-          <NavLink to="/categoria/sencillo">Singles</NavLink>
-          <NavLink to="/cart"><CartWidget numero={4}/></NavLink>
+          <Nav.Link><NavLink to="/categoria/album">Albumes</NavLink></Nav.Link>
+          <Nav.Link><NavLink to="/categoria/sencillo">Singles</NavLink></Nav.Link>
+          <Nav.Link><NavLink to="/cart"><CartWidget/></NavLink></Nav.Link>
           </Nav>
         </Container>
       </Navbar>
