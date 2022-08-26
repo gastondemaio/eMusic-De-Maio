@@ -21,7 +21,7 @@ const ItemListContainer = () => {
     const getData = new Promise(resolve => {
       setTimeout(() => {
         resolve(music)
-      }, 3000)
+      }, 500)
     });
     if(categoriaId){
       getData.then(res => setData(res.filter(album => album.category === categoriaId)))

@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
       const getData = new Promise(resolve => {
         setTimeout(() => {
           resolve(musica)
-        }, 3000)
+        }, 500)
       });
       getData.then(res => setData(res.find(album => album.id === parseInt(detalleId))))
   
