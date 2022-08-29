@@ -23,7 +23,7 @@ const Cart = () => {
       <p>
         total: {totalPrice()}
       </p>
-      <button onClick={() => clearCart(cart.map(product => <ItemCart key={product.id} product={product}/>))}>Eliminar Todo</button>
+      <button onClick={() => clearCart(product => <ItemCart key={product.id} product={product}/>)}>Eliminar Todo</button>
     </>
   )
 }
