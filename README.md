@@ -1,11 +1,11 @@
-### PROYECTO CODERHOUSE
+# PROYECTO CODERHOUSE
 
 ## DESCRIPCION
 
 Proyecto para CoderHouse, para el curso de ReactJS.
 Este proyecto es una página de música, donde podemos ver los albumes y sencillos disponibles de diferentes bandas y artístas.
 
-# VIDEO EXPLICATIVO
+## VIDEO EXPLICATIVO
 
 
 
@@ -16,7 +16,7 @@ Este proyecto es una página de música, donde podemos ver los albumes y sencill
 * Tener instalado react-router-dom
 * Abrir cmd y escribir el comando: npm start
 
-## Tecnologias
+## TECNOLOGIAS
 
 * ReactJS
 * JavaScript
