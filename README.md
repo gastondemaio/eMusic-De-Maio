@@ -7,9 +7,7 @@ Este proyecto es una página de música, donde podemos ver los albumes y sencill
 
 ## VIDEO EXPLICATIVO
 
-```
 [VIDEO DEMOSTRANDO LA FUNCIONALIDAD DE LA PAGINA](https://drive.google.com/file/d/1qYzvCcl8-JZC1VwkznoPc4tLINnxz_Tt/view)
-```
 
 ## INSTALACION / USO
 
