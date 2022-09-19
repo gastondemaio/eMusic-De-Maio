@@ -13,16 +13,22 @@ const ItemDetail = ({data}) => {
   }
 
   return (
-    <div>
+    <div >
+      <div className='card'>
         <img src={data.image} alt={data.title}></img>
-        <div><p>{data.descripcion}</p></div>
-        <div><p>{data.price}</p></div>
-        {
-          goToCart
-              ? <Link to='/cart'>Terminar compra</Link>
-              : <ItemCount initial={1} stock={5} onAdd={onAdd}></ItemCount>
-        }
+        <div className='container'>
+          <div><p>{data.descripcion}</p></div>
+          <div><p>Precio unitario: {data.price}</p></div>
+        </div>
+      </div>
+      <br/>
+      {
+        goToCart
+            ? <Link to='/cart'>Terminar compra</Link>
+            : <ItemCount initial={1} stock={5} onAdd={onAdd}></ItemCount>
+      }
     </div>
+    
   )
 }
 

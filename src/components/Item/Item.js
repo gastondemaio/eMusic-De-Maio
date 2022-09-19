@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom'
 
 const Item = ({info}) => {
   return (
-    <Link to={`/detalle/${info.id}`} className='musica'>
-        <img src={info.image} alt=''/>
-        <p>{info.title}</p>
-        <p>{info.price}</p>
-    </Link>
+    <div className='card'>
+      <Link to={`/detalle/${info.id}`}>
+          <img src={info.image} alt='' />
+          <div className='container'>
+            <p className='item__title'>{info.banda}</p>
+            <p className='item__price'>{info.title}</p>
+          </div>
+      </Link>
+    </div> 
   )
 }
 
